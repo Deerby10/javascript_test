@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ 
+table{
+    text-align:center;
+    border:2px solid DarkRed;
+    background-color:rgb(218, 210, 188);
+}
+textarea{
+        box-shadow: 1px 1px 0 ;
+        background-color:#CCFF99;
+        display: block;
+        font-family: 'Marck Script',cursive;
+        font-size: 22px;
+        width: auto;
+        margin-right: 5px;
+        margin-left: 5px;
+        }
+#text{
+    background-color:rgb(239, 241, 90);
+    display: block;
+    height: 25px;
+    font-family:'Lucida Console',cursive;
+    font-size: 20px;
+    width: auto;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    }      
+#button{
+    display: fade;
+    font-weight: bold;
+    color:rgb(97, 89, 214);
+    }
+     
+</style>
+ 
+<script src="script.js"></script>
+
+</head>
+<body>
+    
+    <form name = "form">
+        <table style="border:5px solid black;margin-left:auto;margin-right:auto;" width=59 cellpadding=1 cellspacing=1>
+            <tr>
+                <td colspan=1 center> <input type="button" id="button" value="Start Typing Test" name="start" onClick="beginit()"> </td>
+            </tr>
+            <tr>
+                <td><textarea name="given" cols=53 rows=3 onFocus="focusText()"></textarea></td>
+            </tr>
+            <tr>    
+                <td colspan=1>
+                    <input type="text" id="text" name="typed" size=57 >
+                    <input type="button" id="button1" value=DONE  name="stop"  onClick="done()"></td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>
