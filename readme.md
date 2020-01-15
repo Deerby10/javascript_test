@@ -52,7 +52,7 @@ for(i=0;i<10;i++){
     count++; //increment here represents the number of words
 }
 ```
-function to start the typing test
+creating function to start the typing test
 ```Javascript
 function beginit(){
 day = new Date();
