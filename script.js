@@ -7,7 +7,7 @@ var msg=[
             'expanded','data','brew','amazing','conversation','over','relaxing','under','conversation','chewing','peeling'
         ];
 
-    for(i=0;i<15;i++){
+    for(i=0;i<10;i++){
         var msgLength = Object.keys(msg).length;
         var randNum=Math.floor((Math.random()*msgLength));
             console.log(Object.keys(msg).length);
@@ -19,15 +19,7 @@ var msg=[
 
         count++;
     }
-
-        // var randNum=Math.floor((Math.random()*msg.length));
-        // fullMessage = fullMessage + msg[randNum];
-        // fullMessage.split("")
-        // console.log("meeesss: " + fullMessage.split("")+Object.keys(fullMessage.split("")).length);
-        // console.log(fullMessage.length);
-        
-     
-      
+           
 function beginit(){
 day = new Date();
 startType = day.getTime();
@@ -69,21 +61,18 @@ if(document.form.typed.value.length==document.form.given.value.length)
 
 
 
-window.onload=function(){
-// Get the input field
-var input = document.getElementById("text");
+    window.onload=function(){
+        // Get the input field
+        var input = document.getElementById("text");
 
-// Execute a function when the user releases a key on the keyboard
-input.addEventListener("keypress", function(event) {
-  // Number 13 is the "Enter" key on the keyboard
-  if (event.keyCode === 13) {
-    // Cancel the default action, if needed
-    event.preventDefault();
-    // Trigger the button element with a click
-    document.getElementById("button1").click();
-  }
-});
-}
-window.onclick()=function() {
-    beginit();
+        // Execute a function when the user releases a key on the keyboard
+        input.addEventListener("keypress", function(event) {
+        // Number 13 is the "Enter" key on the keyboard
+        if (event.keyCode === 13) {
+            // Cancel the default action, if needed
+            event.preventDefault();
+            // Trigger the button element with a click
+            document.getElementById("doneButton").click();
+        }
+    });
 }
